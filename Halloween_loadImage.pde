@@ -1,24 +1,21 @@
-//Click and Drag your cursor to "carve" the pumpkins
+//click and drag your cursor to make the heart in the bears
 
 PImage img;
 
 void setup() {
-  size(800, 500);
-  img = loadImage("pumpkins.png");
+  size(1280, 600);
+  img = loadImage("webarebears.jpg");
   image(img, 0, 0);
 }
-
-void draw() 
+void draw()
 {
-  save("YOURNAME.Halloween.png");
+  save("DANIEL.webarebears.png");
 }
-
 void mouseDragged()
 {
-  //"Carves" the pumpkins
-  //blendMode optional, might be problematic with a light or white background
-  blendMode(OVERLAY); 
+  //Cares the hearts
+  blendMode(OVERLAY);
   noStroke();
-  fill(255, 200, 25);
+  fill(255, 5, 5);
   ellipse(mouseX, mouseY, 5, 5);
 }
